@@ -3,8 +3,6 @@ export const runtime = 'edge'
 import { NextRequest, NextResponse } from "next/server"
 import { Resend } from "resend"
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-
 interface CotizacionRequest {
   serviceName: string
   formData: Record<string, string>
@@ -13,6 +11,7 @@ interface CotizacionRequest {
 
 export async function POST(req: NextRequest) {
   try {
+    const resend = new Resend(process.env.RESEND_API_KEY)
     const { serviceName, formData, fields }: CotizacionRequest = await req.json()
 
     const fieldsHtml = fields
