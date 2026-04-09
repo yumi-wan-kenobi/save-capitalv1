@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import Image from "next/image"
 import Link from "next/link"
 import { Menu, ChevronDown, Heart, Activity, TrendingUp, GraduationCap, Umbrella, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -42,15 +43,22 @@ export function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-[#1e40af]/95 backdrop-blur-sm shadow-lg"
-          : "bg-[#1e40af]"
+          ? "bg-[hsl(215,72%,20%)]/95 backdrop-blur-sm shadow-lg"
+          : "bg-[hsl(215,72%,20%)]"
       }`}
     >
       <div className="container mx-auto px-4">
         <nav className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <span className="text-xl md:text-2xl font-serif font-bold text-[#d4af37]">
+            <Image
+              src="/images/logo.png"
+              alt="Save Capital logo"
+              width={48}
+              height={48}
+              className="w-10 h-10 md:w-12 md:h-12"
+            />
+            <span className="text-xl md:text-2xl font-serif font-bold text-[hsl(40,76%,55%)]">
               Save Capital
             </span>
           </Link>
@@ -59,7 +67,7 @@ export function Navbar() {
           <div className="hidden md:flex items-center gap-8">
             {/* Services Dropdown */}
             <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center gap-1 text-white/90 hover:text-[#d4af37] transition-colors text-sm font-medium outline-none">
+              <DropdownMenuTrigger className="flex items-center gap-1 text-white/90 hover:text-[hsl(40,76%,55%)] transition-colors text-sm font-medium outline-none">
                 Servicios
                 <ChevronDown className="w-4 h-4" />
               </DropdownMenuTrigger>
@@ -68,7 +76,7 @@ export function Navbar() {
                   <DropdownMenuItem key={link.href} asChild>
                     <Link
                       href={link.href}
-                      className="cursor-pointer hover:bg-[#1e40af]/5 hover:text-[#1e40af]"
+                      className="cursor-pointer hover:bg-[hsl(215,72%,20%)]/5 hover:text-[hsl(215,72%,20%)]"
                     >
                       {link.label}
                     </Link>
@@ -81,7 +89,7 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-white/90 hover:text-[#d4af37] transition-colors text-sm font-medium"
+                className="text-white/90 hover:text-[hsl(40,76%,55%)] transition-colors text-sm font-medium"
               >
                 {link.label}
               </Link>
@@ -91,7 +99,7 @@ export function Navbar() {
           {/* Desktop CTA */}
           <div className="hidden md:block">
             <Link href="/#contacto">
-              <Button className="bg-[#d4af37] hover:bg-[#c9a030] text-[#1e40af] font-semibold px-6">
+              <Button className="bg-[hsl(40,76%,55%)] hover:bg-[hsl(40,80%,70%)] text-white font-semibold px-6">
                 Contactar
               </Button>
             </Link>
@@ -107,11 +115,18 @@ export function Navbar() {
             </SheetTrigger>
             <SheetContent
               side="right"
-              className="bg-[#1e3a8a] border-[#1e3a8a] w-[300px] p-0 [&>button]:text-white/70 [&>button]:hover:text-white [&>button]:top-5 [&>button]:right-5"
+              className="bg-[hsl(215,50%,30%)] border-[hsl(215,50%,30%)] w-[300px] p-0 [&>button]:text-white/70 [&>button]:hover:text-white [&>button]:top-5 [&>button]:right-5"
             >
               {/* Header */}
-              <div className="px-6 pt-6 pb-4 border-b border-white/10">
-                <span className="text-xl font-serif font-bold text-[#d4af37]">
+              <div className="px-6 pt-6 pb-4 border-b border-white/10 flex items-center gap-2">
+                <Image
+                  src="/images/logo.png"
+                  alt="Save Capital logo"
+                  width={32}
+                  height={32}
+                  className="w-8 h-8"
+                />
+                <span className="text-xl font-serif font-bold text-[hsl(40,76%,55%)]">
                   Save Capital
                 </span>
               </div>
@@ -126,9 +141,9 @@ export function Navbar() {
                       key={link.href}
                       href={link.href}
                       onClick={() => setIsOpen(false)}
-                      className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-white/85 hover:bg-white/10 hover:text-[#d4af37] transition-all group"
+                      className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-white/85 hover:bg-white/10 hover:text-[hsl(40,76%,55%)] transition-all group"
                     >
-                      <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-[#d4af37]/20 transition-colors">
+                      <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-[hsl(40,76%,55%)]/20 transition-colors">
                         <Icon className="w-4 h-4" />
                       </div>
                       <span className="text-sm font-medium">{link.label}</span>
@@ -145,7 +160,7 @@ export function Navbar() {
                     key={link.href}
                     href={link.href}
                     onClick={() => setIsOpen(false)}
-                    className="flex items-center justify-between px-3 py-2.5 rounded-xl text-white/85 hover:bg-white/10 hover:text-[#d4af37] transition-all group"
+                    className="flex items-center justify-between px-3 py-2.5 rounded-xl text-white/85 hover:bg-white/10 hover:text-[hsl(40,76%,55%)] transition-all group"
                   >
                     <span className="text-base font-medium">{link.label}</span>
                     <ChevronRight className="w-4 h-4 opacity-40 group-hover:opacity-100 transition-opacity" />
@@ -156,7 +171,7 @@ export function Navbar() {
               {/* Footer CTA */}
               <div className="px-4 pb-6 mt-auto border-t border-white/10 pt-4">
                 <Link href="/#contacto" onClick={() => setIsOpen(false)}>
-                  <Button className="bg-[#d4af37] hover:bg-[#c9a030] text-[#1e40af] font-semibold w-full py-5 text-base">
+                  <Button className="bg-[hsl(40,76%,55%)] hover:bg-[hsl(40,80%,70%)] text-white font-semibold w-full py-5 text-base">
                     Contactar
                   </Button>
                 </Link>

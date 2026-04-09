@@ -117,7 +117,7 @@ export default function GastosMedicosMayoresPage() {
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
                   <CheckCircle className="w-6 h-6 text-green-600" />
                 </div>
-                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#1e40af]">
+                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[hsl(215,72%,20%)]">
                   ¿Qué Cubre?
                 </h2>
               </div>
@@ -137,7 +137,7 @@ export default function GastosMedicosMayoresPage() {
                 <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
                   <XCircle className="w-6 h-6 text-red-600" />
                 </div>
-                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#1e40af]">
+                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[hsl(215,72%,20%)]">
                   ¿Qué NO Cubre?
                 </h2>
               </div>
@@ -161,7 +161,7 @@ export default function GastosMedicosMayoresPage() {
       {/* Planes Disponibles */}
       <section className="py-16 md:py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#1e40af] mb-4 text-center">
+          <h2 className="text-2xl md:text-3xl font-serif font-bold text-[hsl(215,72%,20%)] mb-4 text-center">
             Planes Disponibles
           </h2>
           <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
@@ -174,19 +174,19 @@ export default function GastosMedicosMayoresPage() {
                 key={index}
                 className={`relative rounded-2xl p-8 ${
                   plan.recommended
-                    ? "bg-[#1e40af] text-white ring-4 ring-[#d4af37]"
+                    ? "bg-[hsl(215,72%,20%)] text-white ring-4 ring-[hsl(40,76%,55%)]"
                     : "bg-white border-2 border-gray-100 shadow-lg"
                 }`}
               >
                 {plan.recommended && (
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                    <span className="bg-[#d4af37] text-[#1e40af] text-sm font-bold px-4 py-1 rounded-full">
+                    <span className="bg-[hsl(40,76%,55%)] text-white text-sm font-bold px-4 py-1 rounded-full">
                       Recomendado
                     </span>
                   </div>
                 )}
 
-                <h3 className={`text-xl font-bold mb-6 ${plan.recommended ? "text-white" : "text-[#1e40af]"}`}>
+                <h3 className={`text-xl font-bold mb-6 ${plan.recommended ? "text-white" : "text-[hsl(215,72%,20%)]"}`}>
                   {plan.name}
                 </h3>
 
@@ -194,7 +194,7 @@ export default function GastosMedicosMayoresPage() {
                   {plan.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start gap-2">
                       <CheckCircle className={`w-4 h-4 flex-shrink-0 mt-0.5 ${
-                        plan.recommended ? "text-[#d4af37]" : "text-green-500"
+                        plan.recommended ? "text-[hsl(40,76%,55%)]" : "text-green-500"
                       }`} />
                       <span className={`text-sm ${plan.recommended ? "text-white/90" : "text-gray-700"}`}>
                         {feature}
@@ -212,15 +212,15 @@ export default function GastosMedicosMayoresPage() {
       <section className="py-16 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-center gap-3 mb-10">
-            <Clock className="w-8 h-8 text-[#1e40af]" />
-            <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#1e40af]">
+            <Clock className="w-8 h-8 text-[hsl(215,72%,20%)]" />
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-[hsl(215,72%,20%)]">
               Períodos de Espera
             </h2>
           </div>
 
           <div className="max-w-3xl mx-auto">
             <div className="bg-white rounded-xl overflow-hidden shadow-lg">
-              <div className="grid grid-cols-2 bg-[#1e40af] text-white">
+              <div className="grid grid-cols-2 bg-[hsl(215,72%,20%)] text-white">
                 <div className="px-6 py-4 font-semibold">Tipo de Padecimiento</div>
                 <div className="px-6 py-4 font-semibold">Tiempo de Espera</div>
               </div>
@@ -247,7 +247,7 @@ export default function GastosMedicosMayoresPage() {
       </section>
 
       {/* Formulario de Cotización */}
-      <section id="cotizar" className="py-16 md:py-20 bg-gradient-to-br from-[#1e40af] to-[#0a2351]">
+      <section id="cotizar" className="py-16 md:py-20 bg-gradient-to-br from-[hsl(215,72%,20%)] to-[#0a2351]">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto">
             <QuoteForm

@@ -42,7 +42,7 @@ const faqs = [
   },
   {
     question: "¿Cómo sé que puedo confiar en ti?",
-    answer: "Soy agente certificada por la CNSF (Comisión Nacional de Seguros y Fianzas). Tengo más de 15 años de experiencia y puedes verificar mi registro. Además, trabajo con las aseguradoras más sólidas del país.",
+    answer: "Soy agente certificada por la CNSF (Comisión Nacional de Seguros y Fianzas) y puedes verificar mi cédula oficial. Trabajo con Insignia Life y Mapfre, las aseguradoras más sólidas del mercado.",
   },
   {
     question: "¿Puedes asesorarme aunque no contrate?",
@@ -56,7 +56,7 @@ export function FaqSection() {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#1e40af] mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[hsl(215,72%,20%)] mb-4">
             Dudas Frecuentes
           </h2>
           <p className="text-gray-600 text-lg">
@@ -71,9 +71,9 @@ export function FaqSection() {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="bg-[#fafafa] rounded-xl border border-gray-100 px-6 data-[state=open]:border-[#d4af37]/30 data-[state=open]:shadow-lg transition-all"
+                className="bg-[hsl(210,33%,98%)] rounded-xl border border-gray-100 px-6 data-[state=open]:border-[hsl(40,76%,55%)]/30 data-[state=open]:shadow-lg transition-all"
               >
-                <AccordionTrigger className="text-left text-[#1e40af] font-semibold hover:text-[#d4af37] py-5 [&[data-state=open]>svg]:text-[#d4af37]">
+                <AccordionTrigger className="text-left text-[hsl(215,72%,20%)] font-semibold hover:text-[hsl(40,76%,55%)] py-5 [&[data-state=open]>svg]:text-[hsl(40,76%,55%)]">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-600 pb-5 leading-relaxed">

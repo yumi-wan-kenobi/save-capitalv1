@@ -100,7 +100,7 @@ export default function AhorrosEducativosPage() {
       {/* Por qué es importante */}
       <section className="py-16 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#1e40af] mb-4 text-center">
+          <h2 className="text-2xl md:text-3xl font-serif font-bold text-[hsl(215,72%,20%)] mb-4 text-center">
             ¿Por qué es importante ahorrar para educación?
           </h2>
           <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
@@ -114,7 +114,7 @@ export default function AhorrosEducativosPage() {
                 key={index}
                 className="bg-white rounded-xl p-6 text-center shadow-lg border border-gray-100"
               >
-                <p className="text-3xl md:text-4xl font-bold text-[#d4af37] mb-2">{stat.value}</p>
+                <p className="text-3xl md:text-4xl font-bold text-[hsl(40,76%,55%)] mb-2">{stat.value}</p>
                 <p className="text-gray-600 text-sm">{stat.label}</p>
               </div>
             ))}
@@ -125,7 +125,7 @@ export default function AhorrosEducativosPage() {
       {/* Características del Plan */}
       <section className="py-16 md:py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#1e40af] mb-12 text-center">
+          <h2 className="text-2xl md:text-3xl font-serif font-bold text-[hsl(215,72%,20%)] mb-12 text-center">
             Características del Plan
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
@@ -134,10 +134,10 @@ export default function AhorrosEducativosPage() {
                 key={index}
                 className="text-center p-6"
               >
-                <div className="w-16 h-16 bg-[#1e40af]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <feature.icon className="w-8 h-8 text-[#1e40af]" />
+                <div className="w-16 h-16 bg-[hsl(215,72%,20%)]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <feature.icon className="w-8 h-8 text-[hsl(215,72%,20%)]" />
                 </div>
-                <h3 className="text-lg font-bold text-[#1e40af] mb-2">{feature.title}</h3>
+                <h3 className="text-lg font-bold text-[hsl(215,72%,20%)] mb-2">{feature.title}</h3>
                 <p className="text-gray-600 text-sm">{feature.description}</p>
               </div>
             ))}
@@ -146,7 +146,7 @@ export default function AhorrosEducativosPage() {
       </section>
 
       {/* Planes Disponibles */}
-      <section className="py-16 md:py-20 bg-[#1e40af]">
+      <section className="py-16 md:py-20 bg-[hsl(215,72%,20%)]">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-serif font-bold text-white mb-4 text-center">
             Planes Disponibles
@@ -162,10 +162,10 @@ export default function AhorrosEducativosPage() {
                 className="bg-white rounded-2xl p-8 shadow-xl"
               >
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 bg-[#d4af37]/20 rounded-full flex items-center justify-center">
-                    <GraduationCap className="w-6 h-6 text-[#d4af37]" />
+                  <div className="w-12 h-12 bg-[hsl(40,76%,55%)]/20 rounded-full flex items-center justify-center">
+                    <GraduationCap className="w-6 h-6 text-[hsl(40,76%,55%)]" />
                   </div>
-                  <h3 className="text-xl font-bold text-[#1e40af]">{plan.nivel}</h3>
+                  <h3 className="text-xl font-bold text-[hsl(215,72%,20%)]">{plan.nivel}</h3>
                 </div>
 
                 <div className="space-y-4 text-sm">
@@ -189,7 +189,7 @@ export default function AhorrosEducativosPage() {
       </section>
 
       {/* Formulario de Cotización */}
-      <section id="cotizar" className="py-16 md:py-20 bg-gradient-to-br from-[#1e40af] to-[#0a2351]">
+      <section id="cotizar" className="py-16 md:py-20 bg-gradient-to-br from-[hsl(215,72%,20%)] to-[#0a2351]">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto">
             <QuoteForm

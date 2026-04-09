@@ -44,8 +44,8 @@ export function ServicesSection() {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#1e40af] mb-4">
-            Nuestros Servicios
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[hsl(215,72%,20%)] mb-4">
+            Mis Servicios
           </h2>
           <p className="text-gray-600 text-lg">
             Soluciones de protección financiera adaptadas a tus necesidades y las de tu familia
@@ -73,7 +73,7 @@ export function ServicesSection() {
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-[#d4af37] mb-3 group-hover:text-[#1e40af] transition-colors">
+                <h3 className="text-xl font-semibold text-[hsl(40,76%,55%)] mb-3 group-hover:text-[hsl(215,72%,20%)] transition-colors">
                   {service.title}
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
@@ -82,7 +82,7 @@ export function ServicesSection() {
                 <Link href={service.href}>
                   <Button
                     variant="ghost"
-                    className="text-[#1e40af] hover:text-[#d4af37] hover:bg-[#d4af37]/10 p-0 h-auto font-semibold group/btn"
+                    className="text-white hover:text-[hsl(40,76%,55%)] hover:bg-[hsl(40,76%,55%)]/10 p-0 h-auto font-semibold group/btn"
                   >
                     Conocer más
                     <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover/btn:translate-x-1" />

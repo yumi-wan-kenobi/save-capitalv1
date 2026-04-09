@@ -35,20 +35,20 @@ export function WhyAgentSection() {
     <section id="por-que-agente" className="py-16 md:py-24 bg-gradient-to-b from-[#f0f4ff] to-white relative overflow-hidden">
       {/* Decorative background */}
       <div className="absolute inset-0 opacity-50">
-        <div className="absolute top-20 right-10 w-64 h-64 bg-[#1e40af]/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 left-10 w-64 h-64 bg-[#d4af37]/5 rounded-full blur-3xl" />
+        <div className="absolute top-20 right-10 w-64 h-64 bg-[hsl(215,72%,20%)]/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 left-10 w-64 h-64 bg-[hsl(40,76%,55%)]/5 rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#1e40af] mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[hsl(215,72%,20%)] mb-6">
             ¿Por qué elegir un Agente de Seguros?
           </h2>
           <p className="text-gray-600 text-lg leading-relaxed">
             En la era digital, es fácil preguntarse: ¿por qué hablar con un agente?
-            La respuesta es simple: los seguros no son <span className="font-semibold text-[#1e40af]">PRODUCTOS</span>,
-            son <span className="font-semibold text-[#d4af37]">SOLUCIONES</span>.
+            La respuesta es simple: los seguros no son <span className="font-semibold text-[hsl(215,72%,20%)]">PRODUCTOS</span>,
+            son <span className="font-semibold text-[hsl(40,76%,55%)]">SOLUCIONES</span>.
           </p>
         </div>
 
@@ -57,15 +57,15 @@ export function WhyAgentSection() {
           {reasons.map((reason, index) => (
             <div
               key={reason.title}
-              className="group bg-white rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#d4af37]/30 animate-fade-in-up"
+              className="group bg-white rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[hsl(40,76%,55%)]/30 animate-fade-in-up"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="flex items-start gap-5">
-                <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-[#d4af37] to-[#c9a030] rounded-xl flex items-center justify-center shadow-lg">
+                <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-[hsl(40,76%,55%)] to-[hsl(40,80%,70%)] rounded-xl flex items-center justify-center shadow-lg">
                   <reason.icon className="w-7 h-7 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-[#1e40af] mb-2">
+                  <h3 className="text-xl font-semibold text-[hsl(215,72%,20%)] mb-2">
                     {reason.title}
                   </h3>
                   <p className="text-gray-600 leading-relaxed">

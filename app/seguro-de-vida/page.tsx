@@ -92,7 +92,7 @@ export default function SeguroDeVidaPage() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div>
-              <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#1e40af] mb-4">
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-[hsl(215,72%,20%)] mb-4">
                 ¿Qué es un Seguro de Vida?
               </h2>
               <p className="text-gray-600 leading-relaxed mb-4">
@@ -126,7 +126,7 @@ export default function SeguroDeVidaPage() {
       {/* A quién le sirve */}
       <section className="py-16 md:py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#1e40af] mb-10 text-center">
+          <h2 className="text-2xl md:text-3xl font-serif font-bold text-[hsl(215,72%,20%)] mb-10 text-center">
             ¿A quién le sirve un Seguro de Vida?
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6 max-w-5xl mx-auto">
@@ -135,8 +135,8 @@ export default function SeguroDeVidaPage() {
                 key={index}
                 className="bg-gray-50 rounded-xl p-6 text-center hover:shadow-lg transition-shadow"
               >
-                <div className="w-14 h-14 bg-[#1e40af]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <item.icon className="w-7 h-7 text-[#1e40af]" />
+                <div className="w-14 h-14 bg-[hsl(215,72%,20%)]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <item.icon className="w-7 h-7 text-[hsl(215,72%,20%)]" />
                 </div>
                 <p className="text-gray-700 font-medium text-sm">{item.text}</p>
               </div>
@@ -146,7 +146,7 @@ export default function SeguroDeVidaPage() {
       </section>
 
       {/* Tipos de Planes */}
-      <section className="py-16 md:py-20 bg-[#1e40af]">
+      <section className="py-16 md:py-20 bg-[hsl(215,72%,20%)]">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-serif font-bold text-white mb-10 text-center">
             Tipos de Planes
@@ -158,7 +158,7 @@ export default function SeguroDeVidaPage() {
                 className="bg-white rounded-2xl p-8 shadow-xl"
               >
                 <div className="mb-4">
-                  <h3 className="text-xl font-bold text-[#1e40af]">{plan.title}</h3>
+                  <h3 className="text-xl font-bold text-[hsl(215,72%,20%)]">{plan.title}</h3>
                 </div>
                 <p className="text-gray-600 mb-6">{plan.description}</p>
                 <ul className="space-y-3">
@@ -176,7 +176,7 @@ export default function SeguroDeVidaPage() {
       </section>
 
       {/* Formulario de Cotización */}
-      <section id="cotizar" className="py-16 md:py-20 bg-gradient-to-br from-[#1e40af] to-[#0a2351]">
+      <section id="cotizar" className="py-16 md:py-20 bg-gradient-to-br from-[hsl(215,72%,20%)] to-[#0a2351]">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto">
             <QuoteForm

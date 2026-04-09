@@ -32,13 +32,13 @@ export async function POST(req: NextRequest) {
       subject: `Nueva solicitud de cotizacion: ${serviceName}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #ffffff;">
-          <div style="background: #1e40af; padding: 32px; text-align: center;">
-            <h1 style="color: #d4af37; margin: 0; font-size: 24px;">Save Capital</h1>
+          <div style="background: hsl(215,72%,20%); padding: 32px; text-align: center;">
+            <h1 style="color: hsl(40,76%,55%); margin: 0; font-size: 24px;">Save Capital</h1>
             <p style="color: white; margin: 8px 0 0; font-size: 14px;">Nueva solicitud de cotizacion</p>
           </div>
 
           <div style="padding: 32px;">
-            <h2 style="color: #1e40af; margin-top: 0;">${serviceName}</h2>
+            <h2 style="color: hsl(215,72%,20%); margin-top: 0;">${serviceName}</h2>
             <p style="color: #6b7280; margin-bottom: 24px;">
               Un cliente ha enviado una solicitud de cotizacion con los siguientes datos:
             </p>

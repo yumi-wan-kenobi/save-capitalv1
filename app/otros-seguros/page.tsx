@@ -93,7 +93,7 @@ export default function OtrosSegurosPage() {
       {/* Seguros Disponibles */}
       <section className="py-16 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#1e40af] mb-4 text-center">
+          <h2 className="text-2xl md:text-3xl font-serif font-bold text-[hsl(215,72%,20%)] mb-4 text-center">
             Seguros Disponibles
           </h2>
           <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
@@ -107,11 +107,11 @@ export default function OtrosSegurosPage() {
                 className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-100"
               >
                 <div className="flex items-start gap-4 mb-6">
-                  <div className="w-14 h-14 bg-[#1e40af]/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <insurance.icon className="w-7 h-7 text-[#1e40af]" />
+                  <div className="w-14 h-14 bg-[hsl(215,72%,20%)]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <insurance.icon className="w-7 h-7 text-[hsl(215,72%,20%)]" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-[#1e40af]">{insurance.title}</h3>
+                    <h3 className="text-xl font-bold text-[hsl(215,72%,20%)]">{insurance.title}</h3>
                     <p className="text-gray-600 text-sm mt-1">{insurance.description}</p>
                   </div>
                 </div>
@@ -134,7 +134,7 @@ export default function OtrosSegurosPage() {
       {/* Más Información */}
       <section className="py-16 md:py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#1e40af] mb-12 text-center">
+          <h2 className="text-2xl md:text-3xl font-serif font-bold text-[hsl(215,72%,20%)] mb-12 text-center">
             Más Información
           </h2>
 
@@ -142,14 +142,14 @@ export default function OtrosSegurosPage() {
             {/* Seguro de Auto */}
             <div className="bg-gray-50 rounded-2xl p-6 md:p-8">
               <div className="flex items-center gap-3 mb-4">
-                <Car className="w-6 h-6 text-[#d4af37]" />
-                <h3 className="text-xl font-bold text-[#1e40af]">Seguro de Auto</h3>
+                <Car className="w-6 h-6 text-[hsl(40,76%,55%)]" />
+                <h3 className="text-xl font-bold text-[hsl(215,72%,20%)]">Seguro de Auto</h3>
               </div>
               <p className="text-gray-600 leading-relaxed">
                 El seguro de auto es obligatorio en México y te protege ante accidentes de tránsito,
-                robo y daños a terceros. Ofrecemos planes de cobertura amplia que incluyen asistencia
+                robo y daños a terceros. Ofrezco planes de cobertura amplia que incluyen asistencia
                 vial las 24 horas, auto sustituto mientras tu vehículo está en reparación, y cobertura
-                de gastos médicos para ti y tus pasajeros. Trabajamos con las mejores aseguradoras
+                de gastos médicos para ti y tus pasajeros. Trabajo con las mejores aseguradoras
                 para ofrecerte las primas más competitivas del mercado.
               </p>
             </div>
@@ -157,8 +157,8 @@ export default function OtrosSegurosPage() {
             {/* Seguro de Hogar */}
             <div className="bg-gray-50 rounded-2xl p-6 md:p-8">
               <div className="flex items-center gap-3 mb-4">
-                <Home className="w-6 h-6 text-[#d4af37]" />
-                <h3 className="text-xl font-bold text-[#1e40af]">Seguro de Hogar</h3>
+                <Home className="w-6 h-6 text-[hsl(40,76%,55%)]" />
+                <h3 className="text-xl font-bold text-[hsl(215,72%,20%)]">Seguro de Hogar</h3>
               </div>
               <p className="text-gray-600 leading-relaxed">
                 Tu hogar es probablemente tu mayor inversión. El seguro de hogar protege tanto la
@@ -172,29 +172,29 @@ export default function OtrosSegurosPage() {
             {/* Seguro de Viajes */}
             <div className="bg-gray-50 rounded-2xl p-6 md:p-8">
               <div className="flex items-center gap-3 mb-4">
-                <Plane className="w-6 h-6 text-[#d4af37]" />
-                <h3 className="text-xl font-bold text-[#1e40af]">Seguro de Viajes</h3>
+                <Plane className="w-6 h-6 text-[hsl(40,76%,55%)]" />
+                <h3 className="text-xl font-bold text-[hsl(215,72%,20%)]">Seguro de Viajes</h3>
               </div>
               <p className="text-gray-600 leading-relaxed">
                 Viajar sin seguro puede resultar extremadamente costoso en caso de una emergencia
-                médica en el extranjero. Nuestros seguros de viaje ofrecen cobertura médica
+                médica en el extranjero. Los seguros de viaje que ofrezco incluyen cobertura médica
                 internacional, cancelación de viaje, pérdida de equipaje y asistencia las 24 horas
                 en tu idioma. Planes disponibles para viajes individuales, anuales multiviaje,
-                y cobertura familiar. Todos nuestros planes incluyen cobertura por COVID-19.
+                y cobertura familiar. Todos los planes incluyen cobertura por COVID-19.
               </p>
             </div>
 
             {/* Seguros Empresariales */}
             <div className="bg-gray-50 rounded-2xl p-6 md:p-8">
               <div className="flex items-center gap-3 mb-4">
-                <Building2 className="w-6 h-6 text-[#d4af37]" />
-                <h3 className="text-xl font-bold text-[#1e40af]">Seguros Empresariales</h3>
+                <Building2 className="w-6 h-6 text-[hsl(40,76%,55%)]" />
+                <h3 className="text-xl font-bold text-[hsl(215,72%,20%)]">Seguros Empresariales</h3>
               </div>
               <p className="text-gray-600 leading-relaxed">
-                Protege tu negocio con soluciones integrales de seguros empresariales. Ofrecemos
+                Protege tu negocio con soluciones integrales de seguros empresariales. Ofrezco
                 seguros de grupo para empleados (vida y gastos médicos), responsabilidad civil
                 empresarial, cobertura de inmuebles y equipo, e interrupción de negocio. También
-                contamos con seguros de hombre clave para proteger a la empresa ante la pérdida
+                cuento con seguros de hombre clave para proteger a la empresa ante la pérdida
                 de ejecutivos esenciales. Cada plan se diseñará de acuerdo a las necesidades
                 específicas de tu empresa.
               </p>
@@ -204,7 +204,7 @@ export default function OtrosSegurosPage() {
       </section>
 
       {/* Formulario de Contacto */}
-      <section id="cotizar" className="py-16 md:py-20 bg-gradient-to-br from-[#1e40af] to-[#0a2351]">
+      <section id="cotizar" className="py-16 md:py-20 bg-gradient-to-br from-[hsl(215,72%,20%)] to-[#0a2351]">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto">
             <QuoteForm

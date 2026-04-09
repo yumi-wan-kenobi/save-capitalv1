@@ -33,7 +33,7 @@ export function ServicePageLayout({
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#1e40af]/90 to-[#1e40af]/70" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[hsl(215,72%,20%)]/90 to-[hsl(215,72%,20%)]/70" />
           
           <div className="absolute inset-0 flex flex-col justify-center">
             <div className="container mx-auto px-4">

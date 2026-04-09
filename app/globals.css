@@ -4,44 +4,46 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Carolina Zamora - Insurance Agent Theme */
-  /* Primary: Professional Blue #1e40af */
-  /* Secondary: Gold #d4af37 */
-  /* Background: Clean White #fafafa */
-  
-  --background: oklch(0.98 0 0);
-  --foreground: oklch(0.15 0.02 250);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.15 0.02 250);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.15 0.02 250);
-  --primary: oklch(0.40 0.15 260);
-  --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(0.75 0.12 85);
-  --secondary-foreground: oklch(0.15 0.02 250);
-  --muted: oklch(0.96 0.005 250);
-  --muted-foreground: oklch(0.45 0.02 250);
-  --accent: oklch(0.75 0.12 85);
-  --accent-foreground: oklch(0.15 0.02 250);
+  /* Carolina Zamora - Insurance Agent Theme — Save Capital Palette */
+  /* Brand palette */
+  --brand-navy:       hsl(215, 72%, 20%);
+  --brand-navy-light: hsl(215, 50%, 30%);
+  --brand-gold:       hsl(40, 76%, 55%);
+  --brand-gold-light: hsl(40, 80%, 70%);
+
+  --background: hsl(210, 33%, 98%);
+  --foreground: hsl(215, 28%, 17%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(215, 28%, 17%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(215, 28%, 17%);
+  --primary: hsl(215, 72%, 20%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(210, 20%, 94%);
+  --secondary-foreground: hsl(215, 28%, 17%);
+  --muted: hsl(210, 20%, 94%);
+  --muted-foreground: hsl(215, 14%, 46%);
+  --accent: hsl(40, 76%, 55%);
+  --accent-foreground: hsl(215, 72%, 20%);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.90 0.005 250);
-  --input: oklch(0.90 0.005 250);
-  --ring: oklch(0.40 0.15 260);
-  --chart-1: oklch(0.40 0.15 260);
-  --chart-2: oklch(0.75 0.12 85);
-  --chart-3: oklch(0.55 0.10 260);
-  --chart-4: oklch(0.65 0.08 85);
-  --chart-5: oklch(0.30 0.10 260);
+  --border: hsl(214, 20%, 88%);
+  --input: hsl(214, 20%, 88%);
+  --ring: hsl(215, 72%, 20%);
+  --chart-1: hsl(40, 76%, 55%);
+  --chart-2: hsl(215, 50%, 30%);
+  --chart-3: hsl(215, 72%, 20%);
+  --chart-4: hsl(40, 80%, 70%);
+  --chart-5: hsl(215, 28%, 17%);
   --radius: 0.75rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.40 0.15 260);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --sidebar: hsl(210, 33%, 98%);
+  --sidebar-foreground: hsl(215, 28%, 17%);
+  --sidebar-primary: hsl(215, 72%, 20%);
+  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+  --sidebar-accent: hsl(210, 20%, 94%);
+  --sidebar-accent-foreground: hsl(215, 28%, 17%);
+  --sidebar-border: hsl(214, 20%, 88%);
+  --sidebar-ring: hsl(215, 72%, 20%);
 }
 
 .dark {

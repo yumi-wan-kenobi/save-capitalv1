@@ -81,7 +81,7 @@ export default function PlanesRetiroPPRPage() {
       <section className="py-16 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#1e40af] mb-6 text-center">
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-[hsl(215,72%,20%)] mb-6 text-center">
               ¿Qué es un Plan Personal de Retiro?
             </h2>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
@@ -89,11 +89,11 @@ export default function PlanesRetiroPPRPage() {
                 Un Plan Personal de Retiro (PPR) es un instrumento de ahorro a largo plazo
                 diseñado específicamente para complementar tu pensión y asegurar un retiro cómodo.
                 A diferencia de las cuentas de ahorro tradicionales, los PPR ofrecen
-                <strong className="text-[#1e40af]"> beneficios fiscales significativos</strong>.
+                <strong className="text-[hsl(215,72%,20%)]"> beneficios fiscales significativos</strong>.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
                 Cada aportación que realizas puede ser deducida de tus impuestos,
-                lo que significa que <strong className="text-[#1e40af]">el gobierno te ayuda a ahorrar</strong>
+                lo que significa que <strong className="text-[hsl(215,72%,20%)]">el gobierno te ayuda a ahorrar</strong>
                 al reducir tu carga fiscal anual.
               </p>
               <p className="text-gray-600 leading-relaxed">
@@ -108,7 +108,7 @@ export default function PlanesRetiroPPRPage() {
       {/* Ventajas Principales */}
       <section className="py-16 md:py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#1e40af] mb-12 text-center">
+          <h2 className="text-2xl md:text-3xl font-serif font-bold text-[hsl(215,72%,20%)] mb-12 text-center">
             Ventajas Principales
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
@@ -117,10 +117,10 @@ export default function PlanesRetiroPPRPage() {
                 key={index}
                 className="bg-gray-50 rounded-2xl p-6 hover:shadow-xl transition-shadow border border-gray-100"
               >
-                <div className="w-14 h-14 bg-[#d4af37]/20 rounded-xl flex items-center justify-center mb-4">
-                  <advantage.icon className="w-7 h-7 text-[#d4af37]" />
+                <div className="w-14 h-14 bg-[hsl(40,76%,55%)]/20 rounded-xl flex items-center justify-center mb-4">
+                  <advantage.icon className="w-7 h-7 text-[hsl(40,76%,55%)]" />
                 </div>
-                <h3 className="text-lg font-bold text-[#1e40af] mb-2">{advantage.title}</h3>
+                <h3 className="text-lg font-bold text-[hsl(215,72%,20%)] mb-2">{advantage.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{advantage.description}</p>
               </div>
             ))}
@@ -129,7 +129,7 @@ export default function PlanesRetiroPPRPage() {
       </section>
 
       {/* Formulario de Cotización */}
-      <section id="cotizar" className="py-16 md:py-20 bg-gradient-to-br from-[#1e40af] to-[#0a2351]">
+      <section id="cotizar" className="py-16 md:py-20 bg-gradient-to-br from-[hsl(215,72%,20%)] to-[#0a2351]">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto">
             <QuoteForm

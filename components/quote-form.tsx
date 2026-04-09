@@ -140,7 +140,7 @@ export function QuoteForm({
         <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
           <CheckCircle className="w-8 h-8 text-green-600" />
         </div>
-        <h3 className="text-2xl font-serif font-bold text-[#1e40af] mb-2">
+        <h3 className="text-2xl font-serif font-bold text-[hsl(215,72%,20%)] mb-2">
           Solicitud Enviada
         </h3>
         <p className="text-gray-600 mb-6">
@@ -150,7 +150,7 @@ export function QuoteForm({
           <Button 
             onClick={() => setIsSubmitted(false)} 
             variant="outline"
-            className="border-[#1e40af] text-[#1e40af] hover:bg-[#1e40af]/5"
+            className="border-[hsl(215,72%,20%)] text-[hsl(215,72%,20%)] hover:bg-[hsl(215,72%,20%)]/5"
           >
             Enviar otra solicitud
           </Button>
@@ -168,7 +168,7 @@ export function QuoteForm({
 
   return (
     <div className="bg-white rounded-2xl shadow-xl p-6 md:p-10">
-      <h3 className="text-2xl font-serif font-bold text-[#1e40af] mb-6 text-center">
+      <h3 className="text-2xl font-serif font-bold text-[hsl(215,72%,20%)] mb-6 text-center">
         Solicita tu Cotización
       </h3>
       
@@ -242,7 +242,7 @@ export function QuoteForm({
           <Button
             type="submit"
             disabled={isLoading}
-            className="flex-1 bg-[#1e40af] hover:bg-[#1e3a8a] text-white h-12 text-base font-semibold"
+            className="flex-1 bg-[hsl(215,72%,20%)] hover:bg-[hsl(215,50%,30%)] text-white h-12 text-base font-semibold"
           >
             {isLoading ? (
               <span className="flex items-center gap-2">
